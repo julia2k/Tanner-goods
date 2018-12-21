@@ -1,0 +1,372 @@
+
+@font-face{
+	font-family: Montserrat-R;
+	src:url(font/Montserrat-Regular.ttf);
+}
+@font-face{
+	font-family: Montserrat-Bold;
+	src:url(font/Montserrat.ttf);
+}
+body{
+	background: #ffffff;
+	position: relative;
+	overflow-x:hidden;
+	overflow-y: scroll;
+	font-family: Montserrat-R;
+}
+li{
+	list-style: none;
+}
+
+a {
+	text-decoration:none !important;
+	color: black;
+}
+.logo{
+	background: url("img/logo.png") no-repeat 50% 60% #b8a47e;
+	background-size: 100px;
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	position:absolute;
+	top:-45px;
+	left:10px;
+
+}
+nav ul{
+	padding:0;
+	position:relative;
+	z-index: 2;
+}
+
+nav li{
+	display:inline-block;
+	text-transform: uppercase;
+	font-family: Montserrat-Bold;
+	font-size: 8pt;
+	margin: 40px 0;	
+	padding:0 30px;
+	position: relative;
+
+}
+
+nav li:nth-child(n+3) a{
+	color:#ffffff;
+}
+
+
+nav a:hover:before{
+	background-image: url(img/nav-line.gif);
+    background-size: 20px 1px;
+    width: 20px;
+    height: 1px;
+    display: block;
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 3px;	
+}
+nav a:hover:after{
+	background-image: url(img/nav-dot.png);
+    background-size: 3px 3px;
+    width: 3px;
+    height: 3px;
+    display: block;
+    content: "";
+    position: absolute;
+    top: 6px;
+    right: 23px;
+}
+
+#carousel .col-md-2{
+	overflow: hidden;
+	width:170px;
+	padding-left:35px; 
+}
+header .carousel-item img{
+	width: 900px;
+	height: 480px;
+}
+header .carousel-inner{
+	position: relative;
+   overflow: visible;
+	top:-120px;
+	right:-260px;
+
+}
+header .carousel-caption{
+	text-align: left;
+	top: 40%;
+	left: -200px;
+	box-sizing: border-box;
+}
+
+header .carousel-caption p{
+	color: #383838;
+	font-size: 11pt; 
+}
+
+header .carousel-caption h5{
+	color: black;
+	font-family: Montserrat-Bold;
+	 text-shadow: 0px 0px 4px #ffffff; 
+	text-transform: uppercase;
+	transform: scaleX(1.1) translateX(41px);
+	letter-spacing: 6px;
+	font-size: 25pt; 
+	line-height: 20px;
+}
+
+header .carousel-caption a{
+	color: #b8a47e;
+	font-size: 11pt; 
+	line-height: 100px !important; 
+	margin-left: 95px;
+
+}
+header .carousel-caption a:hover:before{
+	background-image: url(img/nav-line.gif);
+    background-size: 20px 1px;
+    width: 25px;
+    height: 1px;
+    display: block;
+    content: "";
+    position: absolute;
+    top: 135px;
+    left: 60px;	
+}
+header .carousel-caption a:hover:after{
+	background-image: url(img/arr2.png);
+    background-size: 7px 11px;
+    width: 7px;
+    height: 11px;
+    display: block;
+    content: "";
+    position: absolute;
+    top: 130px;
+    left: 165px;
+}
+
+header .carousel-control-prev, header .carousel-control-next{
+	position: static !important;
+	margin: auto;
+	opacity: 1;	
+}
+.my{
+	color:#b8a47e;
+	font-size: 11pt;
+	transform: scaleX(1.7);
+    }
+
+.my:hover{
+	color:black;
+}
+.indicators-line{
+	width: 1px;
+	height: 25px;
+	background: url(img/indicators-line.png) no-repeat 50% 50%;
+	margin: 5px auto auto;
+}
+header .indicators{
+	top:0;
+	padding: 0;
+	text-align: center;
+	position:relative;
+	display: block;
+	color: black;
+
+}
+header .indicators li {
+	  display: block;
+      margin: 5px auto;
+      color: #878787;
+      font-size: 9pt;
+      font-family: Montserrat-Bold;
+      border-radius: 50%;
+      line-height: 20px;
+      width: 20px;
+     height: 20px;
+     text-indent: 0;
+  }
+ header .indicators>.active, header .indicators li:hover  {
+  	transition: all .9s ease 0s; 
+    background: #878787;  
+    color: black ; 
+    font-size: 20pt; 
+    font-family: Montserrat-R;
+    width: 50px;
+    height: 50px; 
+    line-height: 50px;
+    margin: 25px auto; 
+    cursor: pointer;  
+  }
+
+.info-block{
+	position: relative;
+
+}
+
+.info-block>img{
+width: 850px;
+height: 100%;
+
+}
+
+.info-block-caption{
+	position: absolute;
+	z-index: 10;
+	color: white;
+	top: 40%;
+	left: 340px;
+	text-transform: uppercase;
+	width:500px;
+	height: 70px;
+
+}
+.info-block-caption h2{
+	font-family: Montserrat-Bold;
+	transform: scaleX(1.1) translateX(40px);
+	letter-spacing: 6px;
+	font-size: 25pt; 
+	line-height: 20px;
+
+}
+.info-block-caption p{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font-size: 11pt;
+}
+.info-block-description{
+	position: absolute;
+	z-index: 5;
+	color: #a7a7a7;
+	font-size: 10px;
+	word-spacing: 3px;
+	line-height: 25px;
+	border: 2px solid #b8a47e;
+	width: 600px;
+	height: 200px;
+	right: 0;
+	top : 80px;
+	padding: 35px 50px 25px 310px ;
+	margin-right: 100px;
+
+}
+.info-block-description>img{
+	width: 135px;
+	margin-top: 20px;
+	margin-left: 55px;
+}
+
+.item-line{
+	margin-top: 50px;
+	position: relative;
+}
+
+/* show 3 items 
+    .my-carousel-inner .active,
+    .my-carousel-inner .active + .carousel-item,
+    .my-carousel-inner .active + .carousel-item + .carousel-item,
+    .my-carousel-inner .active + .carousel-item + .carousel-item + .carousel-item  {
+        display: block;
+    }
+    
+    .my-carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .my-carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .my-carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+    .my-carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    
+    .my-carousel-inner .carousel-item-next,
+    .my-carousel-inner .carousel-item-prev {
+      position: relative;
+      transform: translate3d(0, 0, 0);
+    }
+    
+    .my-carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -25%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    */
+    /* left or forward direction 
+    .my-carousel-inner .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .my-carousel-inner .carousel-item-next.carousel-item-left + .carousel-item,
+    .my-carousel-inner .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .my-carousel-inner .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+    .my-carousel-inner .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    */
+    /* farthest right hidden item must be abso position for animations 
+    .my-carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    */
+    /* right or prev direction 
+    .my-carousel-inner .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .my-carousel-inner .carousel-item-prev.carousel-item-right + .carousel-item,
+    .my-carousel-inner .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .my-carousel-inner .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+    .my-carousel-inner .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+       
+    }
+*/
+
+#secondCarousel .carousel-item-right.active,
+#secondCarousel .carousel-item-next {
+  transform: translateX(33.33%);
+}
+
+#secondCarousel .carousel-item-left.active, 
+#secondCarousel .carousel-item-prev {
+  transform: translateX(-33.33%)
+}
+  
+#secondCarousel .carousel-item-right,
+#secondCarousel .carousel-item-left{ 
+  transform: translateX(0);
+}
+
+.my-indicators-2{
+	width: 100%;
+	
+}
+	.my-indicators-2 span{
+		color:black;
+	}
+
+.my-indicators-2 a, .my-indicators-2 a:hover  {
+	transform: scaleY(1.9);
+	margin: 50px;
+	font-size: 15px;
+	opacity: 1;
+    font-weight: 900;
+	color: black;
+	position: static;
+
+}
+
+
+.my-carousel-item{
+	width: 800px;
+	height: 100%;
+	background: white;
+}
